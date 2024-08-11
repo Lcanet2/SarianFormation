@@ -18,6 +18,9 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        "sarian-formations": "#f2f6f7",
+      },
       margin: {
         "5vh": "5vh",
         "10vh": "10vh",

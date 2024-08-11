@@ -1,10 +1,4 @@
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
+import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import logosarian from "../assets/img/logo_sarian.png";
 
 const Header = () => {
@@ -13,27 +7,15 @@ const Header = () => {
       <a className="mr-10">
         <img src={logosarian} alt="Logo_Sarian" />
       </a>
-      <Menubar className="flex items-center border-none gap-7 p-10">
+      <Menubar className="flex items-center border-none gap-7 p-10 bg-sarian-formations">
         <MenubarMenu>
           <MenubarTrigger className="cursor-pointer">Formations</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Produits</MenubarTrigger>
-          <MenubarContent>
-            <MenubarItem className="cursor-pointer">Livres</MenubarItem>
-            <MenubarItem className="cursor-pointer">Disques</MenubarItem>
-          </MenubarContent>
+          <MenubarTrigger className="cursor-pointer">Agences</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Agences</MenubarTrigger>
-          <MenubarContent>
-            <MenubarItem className="cursor-pointer">
-              Siège de Kercado
-            </MenubarItem>
-            <MenubarItem className="cursor-pointer">
-              Noyal sur Vilaine
-            </MenubarItem>
-          </MenubarContent>
+          <MenubarTrigger className="cursor-pointer">Produits</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger className="cursor-pointer">Contact</MenubarTrigger>
