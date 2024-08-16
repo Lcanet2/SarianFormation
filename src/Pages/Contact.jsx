@@ -80,6 +80,7 @@ const Contact = () => {
 
   return (
     <form
+      id="contact"
       onSubmit={handleSubmit}
       className="p-8 shadow-2xl
 

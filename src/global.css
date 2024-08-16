@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Anton;
+  src: url(./assets/font/Anton-Regular.ttf);
+}
+
+* {
+  font-family: Anton;
+}

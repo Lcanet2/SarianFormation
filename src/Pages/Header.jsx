@@ -1,26 +1,26 @@
-import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import logosarian from "../assets/img/logo_sarian.png";
+import "../global.css";
 
 const Header = () => {
   return (
-    <div className="flex justify-around items-center pt-10 mr-10vh">
-      <a className="mr-10">
-        <img src={logosarian} alt="Logo_Sarian" />
+    <div className="flex justify-around items-center pt-10 pb-10 bg-blue-300">
+      <a href="#home" className="mr-10 ">
+        <img src={logosarian} alt="Logo_Sarian" className="bg-blue-300" />
       </a>
-      <Menubar className="flex items-center border-none gap-7 p-10 bg-sarian-formations">
-        <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Formations</MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Agences</MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Produits</MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Contact</MenubarTrigger>
-        </MenubarMenu>
-      </Menubar>
+      <div className="flex items-center gap-7 p-10 bg-blue-300">
+        <a href="#formations" className="cursor-pointer bg-blue-300">
+          Formations
+        </a>
+        <a href="#agences" className="cursor-pointer bg-blue-300">
+          Agences
+        </a>
+        <a href="#produits" className="cursor-pointer bg-blue-300">
+          Produits
+        </a>
+        <a href="#contact" className="cursor-pointer bg-blue-300">
+          Contact
+        </a>
+      </div>
     </div>
   );
 };
